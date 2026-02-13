@@ -385,15 +385,6 @@ section {
     .skills-grid {
         grid-template-columns: 1fr;
     }
-
-    .contact-methods {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .contact-link {
-        width: 100%;
-    }
 }
 
 @media (max-width: 480px) {
