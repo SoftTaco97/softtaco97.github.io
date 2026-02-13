@@ -1,3 +1,29 @@
+// Mobile menu toggle
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.nav-menu');
+
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navMenu.classList.toggle('active');
+});
+
+// Close menu when a link is clicked
+document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navMenu.classList.remove('active');
+    });
+});
+
+// Dynamic copyright year
+document.addEventListener('DOMContentLoaded', function() {
+    const yearElement = document.getElementById('year');
+    const currentYear = new Date().getFullYear();
+    if (yearElement) {
+        yearElement.textContent = currentYear;
+    }
+});
+
 // Smooth scroll behavior for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -36,7 +62,6 @@ document.querySelectorAll('.project-card, .skill-category').forEach(el => {
 });
 
 // Mobile menu toggle (if you add a hamburger menu later)
-const navMenu = document.querySelector('.nav-menu');
 const navItems = document.querySelectorAll('.nav-item');
 
 // Close mobile menu when a link is clicked
