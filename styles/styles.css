@@ -216,6 +216,10 @@ section {
 }
 
 /* Projects Section */
+.projects {
+    background-color: #f8f9fa;
+}
+
 .projects-grid {
     background-color: #f8f9fa;
     display: grid;
