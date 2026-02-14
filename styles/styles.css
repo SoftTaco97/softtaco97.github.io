@@ -217,10 +217,15 @@ section {
 
 /* Projects Section */
 .projects-grid {
+    background-color: #f8f9fa;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     margin-top: 3rem;
+}
+
+.projects-grid a {
+    text-decoration: none;
 }
 
 .project-card {
@@ -233,7 +238,7 @@ section {
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px) !important;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     border-color: #667eea;
 }
@@ -265,9 +270,10 @@ section {
     font-weight: 500;
 }
 
+
 /* Skills Section */
 .skills {
-    background-color: #f8f9fa;
+    background-color: white;
 }
 
 .skills-grid {
